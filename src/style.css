@@ -1,0 +1,258 @@
+ /* fixes border-bottom */
+ .homepage {
+     justify-content: center;
+ }
+
+ .homepage__block {
+     max-width: 100%;
+ }
+
+ /* fix central img resizing: */
+ .homepage__block__content>p>img {
+     width: 100% !important;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 3px 3px 9px var(--colorPickerTransparent);
+     transition: opacity 1s;
+ }
+
+ .topnav__btn--profile {
+     transition: opacity 1s;
+ }
+
+ .homepage__center {
+     overflow: hidden;
+ }
+
+ .homepage__block__content {
+     overflow: visible !important;
+ }
+
+ /* icons on left side: */
+ .smartTitel {
+     width: fit-content;
+ }
+
+ .smartTitel section {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .smartTitel section>div {
+     width: min-content;
+     height: auto;
+     aspect-ratio: 1/1;
+     margin: 6px;
+ }
+
+ .smartTitel img,
+ .smartTitel svg {
+     overflow: visible;
+     aspect-ratio: 1/1;
+     width: 50px;
+     height: auto;
+     padding: 6px;
+     box-shadow: 3px 3px 9px var(--colorPickerTransparent);
+     border-radius: 10px;
+ }
+
+ .section1 div:nth-child(1) img,
+ .section2 div:nth-child(2) img,
+ .section2 div:nth-child(3) img,
+ .section2 div:nth-child(1) img,
+ .section3 .spotifyLink img {
+     padding: 10px !important;
+ }
+
+ .section2 div:nth-child(1) img {
+     object-fit: cover;
+ }
+
+ .blackImg {
+     filter: invert(22%) sepia(14%) saturate(1042%) hue-rotate(164deg) brightness(102%) contrast(85%);
+ }
+
+ /* fix containers division: */
+ .smsc-container--left {
+     flex: 1;
+     min-width: 20% !important;
+     max-width: min-content !important;
+ }
+
+ .smsc-container--main {
+     flex: 2;
+     min-width: 40% !important;
+ }
+
+ .smsc-container--right {
+     flex: 1;
+     min-width: 20% !important;
+     max-width: fit-content !important;
+ }
+
+ .smsc-container--right>#homepage__block--2799 {
+     max-width: min-content;
+ }
+
+ /* new background color: */
+ .homepage {
+     background-color: var(--backgroundColor) !important;
+ }
+
+ /* fix scrollbar background transparent: */
+ ::-webkit-scrollbar {
+     background-color: var(--backgroundColor);
+ }
+
+ /* colorPicker: */
+ :root {
+     --colorPicker: #ff520e;
+     --colorPickerTransparent: #ff520e40;
+ }
+
+ input[type='color'] {
+     height: 20px;
+     width: 45px;
+ }
+
+ .buttons {
+     height: 20px;
+     width: auto;
+ }
+
+ .buttonWrapper {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 20px;
+     display: flex;
+ }
+
+ .homepage>div,
+ .homepage__block {
+     border-color: var(--colorPickerTransparent) !important
+ }
+
+ /* navigation bar: */
+ .topnav {
+     background: linear-gradient(90deg, rgba(255, 87, 23, 1) 0%, rgba(255, 147, 0, 1) 58%, rgba(255, 87, 23, 1) 100%) !important;
+     width: 100%;
+     border-radius: 20px;
+     transition: background-position .2s linear;
+ }
+
+ /* linear-gradient(90deg, rgba(255,87,23,1) 0%, rgb(255 183 51) 58%, rgba(255,87,23,1) 100%) !important */
+ header {
+     margin-left: auto;
+     margin-right: auto;
+     width: calc(100% - 26px);
+     background-color: transparent;
+     margin-top: 12px !important;
+     transition: opacity .7s;
+     transition: all 1s;
+ }
+
+ body {
+     background-color: var(--backgroundColor) !important;
+ }
+
+ .js-btn-profile {
+     border-radius: 20px 0px 0px 20px !important;
+ }
+
+ .js-btn-logout {
+     border-radius: 0px 20px 20px 0px !important;
+ }
+
+ /* navigation bar icons: */
+ .topnav__btn--icon--manual {
+     display: none !important;
+ }
+
+ .js-btn-home {
+     opacity: 0 !important;
+ }
+
+ .topnav:last-child,
+ .topnav:first-child {
+     padding-right: 0.5rem !important;
+     padding-left: 0.5rem !important;
+ }
+
+ /* navigation bar underline: */
+ .topnav__btn:not(.topnav__btn--icon, .js-btn-profile, .topnav__badge)::after,
+ .hlp-vert-box>span:nth-child(1)::after {
+     content: '';
+     background: white;
+     position: absolute;
+     width: 80%;
+     height: 1px;
+     bottom: 0.85rem;
+     left: 10%;
+     opacity: 0;
+     transition: opacity 300ms, transform 300ms;
+     transform: scale(0);
+ }
+
+ .hlp-vert-box>span:nth-child(1) {
+     position: relative;
+ }
+
+ .hlp-vert-box>span:nth-child(1)::after {
+     bottom: -0.45rem;
+     left: 0;
+     width: 100%;
+ }
+
+ .topnav__btn-wrapper {
+     position: relative;
+ }
+
+ .topnav__btn:hover::after,
+ .js-btn-profile:hover>.hlp-vert-box>span::after {
+     opacity: 1;
+     transform: scale(1);
+ }
+
+ /* remove navbar buttons hover effect: */
+ .smsc-topnav .topnav__btn:focus,
+ .smsc-topnav .topnav__btn:hover,
+ .smsc-topnav .topnav__btn[aria-expanded=true] {
+     background-color: transparent !important;
+ }
+
+ /* foldable sides: */
+ .foldable,
+ .clickable {
+     user-select: none;
+     cursor: pointer;
+ }
+
+ /* dialog: */
+ dialog {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 10px;
+     margin: 0px;
+ }
+
+ /* scoodle: */
+ scoodle-kits {
+     min-height: fit-content;
+     padding-bottom: 30px;
+ }
+
+ /* extra modern ui: */
+ body.modern-ui .homepage__block:not(#homepage__block--bibnet) {
+     border-radius: 20px;
+     border: 1px solid rgb(221, 221, 221);
+     margin: 13px;
+     border-color: var(--colorPickerTransparent) !important;
+     box-shadow: var(--colorPickerTransparent) 2px 2px 10px;
+ }
+
+ .homepage__center {
+     border: none !important;
+ }
