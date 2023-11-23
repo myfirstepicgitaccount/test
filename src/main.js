@@ -646,6 +646,6 @@ function savePref() {
 // STYLES
 function style() {
     const style = document.createElement("style");
-    style.src = "https://cdn.jsdelivr.net/gh/myfirstepicgitaccount/test@latest/src/style.css";
+    style.src = "https://cdn.jsdelivr.net/gh/myfirstepicgitaccount/test@main/src/style.css";
     head.appendChild(style);
 }
