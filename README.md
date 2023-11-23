@@ -1,5 +1,5 @@
-# Smartschool 2.0 prettier
-My custom Smartschool version that changes the DOM on page load.
+# SS 2.0 prettier
+My custom SS version that changes the DOM on page load.
 
 ## Included:
 - A more responsive start screen.
